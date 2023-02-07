@@ -10,6 +10,10 @@
   --logo-color: #000000;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
@@ -45,6 +49,17 @@ p {
   margin: 0;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -55,7 +70,7 @@ p {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -96,6 +111,44 @@ p {
 
 .button:focus {
   background-color: var(--main-color);
+}
+
+/* social-list */
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: #fff;
 }
 
 /* header */
@@ -144,6 +197,9 @@ p {
 }
 
 .contacts-link {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -153,6 +209,12 @@ p {
 .contacts-link:hover,
 :focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.address-icon {
+  margin-right: 10px;
+  fill: inherit;
 }
 
 /* HERO */
@@ -219,6 +281,19 @@ p {
   margin-right: 0px;
 }
 
+.thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  width: 100%;
+  min-height: 120px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
 .advantages-subtitle {
   margin-bottom: 10px;
 
@@ -262,11 +337,12 @@ p {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  align-items: flex-start;
+  /* margin: -15px; */
 }
 
 .team-item {
-  margin: 15px;
+  width: calc((100% - 90px) / 4);
 
   background: #ffffff;
 
@@ -275,9 +351,24 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
+}
+
 .team-img {
   display: block;
-  margin-bottom: 30px;
+  width: 100%;
+}
+
+.inner-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team-name {
@@ -291,7 +382,7 @@ p {
 }
 
 .team-prof {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 
   font-weight: 400;
   font-size: 16px;
@@ -299,6 +390,41 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+/* CLIENTS */
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
 }
 
 /* FOOTER */
@@ -339,6 +465,34 @@ footer .contacts-link {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-contacts-color);
+}
+
+footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.inner-contacts {
+  margin-right: 70px;
+}
+
+.join {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+footer .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer .social-icon {
+  fill: #ffffff;
 }
 
 /*-------------------PORTFOLIO-----------------  */
@@ -384,6 +538,12 @@ footer .contacts-link {
   padding: 0px;
 }
 
+.catalog-item:hover,
+.catalog-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .catalog-list li:nth-child(3n) {
   margin-right: 0;
 }
@@ -402,7 +562,7 @@ footer .contacts-link {
 }
 
 .sorting-btn:hover,
-:focus {
+.sorting-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }

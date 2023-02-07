@@ -39,10 +39,20 @@
         </nav>
         <ul class="contacts-list">
           <li class="contacts-item">
-            <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contacts-link" href="mailto:info@devstudio.com">
+              <svg width="16" height="12" class="address-icon">
+                <use xlink:href="./img/svg/sprite.svg#envelope" />
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
           </li>
           <li class="contacts-item">
-            <a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="contacts-link" href="tel:+380961111111">
+              <svg width="10" height="16" class="address-icon">
+                <use xlink:href="./img/svg/sprite.svg#smartphone" />
+              </svg>
+              <span>+38 096 111 11 11</span></a
+            >
           </li>
         </ul>
       </div>
@@ -61,27 +71,47 @@
       <!-- ADVANTAGES -->
       <section class="section">
         <div class="container">
-          <h2 class="title">Переваги</h2>
+          <h2 class="title visually-hidden">Переваги</h2>
           <ul class="advantages-list">
             <li class="advantages-item">
+              <div class="thumb">
+                <svg width="65" height="70" class="advantages-icon">
+                  <use xlink:href="./img/svg/sprite.svg#antenna" />
+                </svg>
+              </div>
               <h3 class="advantages-subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="advantages-desc">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li class="advantages-item">
+              <div class="thumb">
+                <svg width="67" height="70" class="advantages-icon">
+                  <use xlink:href="./img/svg/sprite.svg#clock" />
+                </svg>
+              </div>
               <h3 class="advantages-subtitle">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="advantages-desc">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
             <li class="advantages-item">
+              <div class="thumb">
+                <svg width="70" height="54" class="advantages-icon">
+                  <use xlink:href="./img/svg/sprite.svg#diagram" />
+                </svg>
+              </div>
               <h3 class="advantages-subtitle">ПЛАНУВАННЯ</h3>
               <p class="advantages-desc">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="advantages-item">
+              <div class="thumb">
+                <svg width="70" height="70" class="advantages-icon">
+                  <use xlink:href="./img/svg/sprite.svg#astronaut" />
+                </svg>
+              </div>
               <h3 class="advantages-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="advantages-desc">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -114,23 +144,221 @@
           <ul class="team-list">
             <li class="team-item">
               <img class="team-img" src="./img/team/igor.jpg" alt="Ігор" height="260" />
-              <h3 class="team-name">Ігор Дем'яненко</h3>
-              <p class="team-prof">Product Designer</p>
+              <div class="inner-team">
+                <h3 class="team-name">Ігор Дем'яненко</h3>
+                <p class="team-prof">Product Designer</p>
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a
+                      class="social-link"
+                      href="#"
+                      target="_blank"
+                      aria-label="cсылка на инстаграм"
+                    >
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#instagram" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="#" target="_blank" aria-label="cсылка на твиттер">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#twitter" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="#" target="_blank" aria-label="cсылка на фэйсбук">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#facebook" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="#" target="_blank" aria-label="cсылка на линкедин">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#linkedin" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-item">
               <img class="team-img" src="./img/team/olga.jpg" alt="Ольга" height="260" />
-              <h3 class="team-name">Ольга Рєпіна</h3>
-              <p class="team-prof">Frontend Developer</p>
+              <div class="inner-team">
+                <h3 class="team-name">Ольга Рєпіна</h3>
+                <p class="team-prof">Frontend Developer</p>
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a
+                      class="social-link"
+                      href="#"
+                      target="_blank"
+                      aria-label="cсылка на инстаграм"
+                    >
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#instagram" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="#" target="_blank" aria-label="cсылка на твиттер">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#twitter" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="#" target="_blank" aria-label="cсылка на фэйсбук">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#facebook" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="#" target="_blank" aria-label="cсылка на линкедин">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#linkedin" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-item">
               <img class="team-img" src="./img/team/mykola.jpg" alt="Микола" height="260" />
-              <h3 class="team-name">Микола Тарасов</h3>
-              <p class="team-prof">Marketing</p>
+              <div class="inner-team">
+                <h3 class="team-name">Микола Тарасов</h3>
+                <p class="team-prof">Marketing</p>
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a
+                      class="social-link"
+                      href="#"
+                      target="_blank"
+                      aria-label="cсылка на инстаграм"
+                    >
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#instagram" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="#" target="_blank" aria-label="cсылка на твиттер">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#twitter" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="#" target="_blank" aria-label="cсылка на фэйсбук">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#facebook" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="#" target="_blank" aria-label="cсылка на линкедин">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#linkedin" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-item">
               <img class="team-img" src="./img/team/myhaylo.jpg" alt="Михайло" height="260" />
-              <h3 class="team-name">Михайло Єрмаков</h3>
-              <p class="team-prof">UI Designer</p>
+              <div class="inner-team">
+                <h3 class="team-name">Михайло Єрмаков</h3>
+                <p class="team-prof">UI Designer</p>
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a
+                      class="social-link"
+                      href="#"
+                      target="_blank"
+                      aria-label="cсылка на инстаграм"
+                    >
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#instagram" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="#" target="_blank" aria-label="cсылка на твиттер">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#twitter" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="#" target="_blank" aria-label="cсылка на фэйсбук">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#facebook" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="#" target="_blank" aria-label="cсылка на линкедин">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="./img/svg/sprite.svg#linkedin" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- CLIENTS -->
+      <section class="section clietns">
+        <div class="container">
+          <h2 class="title">Постійні клієнти</h2>
+          <ul class="clients-list">
+            <li class="clients-item">
+              <a class="clients-link" href="#" target="_blank" aria-label="лого компанії">
+                <svg width="106" height="60" class="clients-icon">
+                  <use xlink:href="./img/svg/sprite.svg#Logo1" />
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="#" target="_blank" aria-label="лого компанії">
+                <svg width="106" height="60" class="clients-icon">
+                  <use xlink:href="./img/svg/sprite.svg#Logo2" />
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="#" target="_blank" aria-label="лого компанії">
+                <svg width="106" height="60" class="clients-icon">
+                  <use xlink:href="./img/svg/sprite.svg#Logo3" />
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="#" target="_blank" aria-label="лого компанії">
+                <svg width="106" height="60" class="clients-icon">
+                  <use xlink:href="./img/svg/sprite.svg#Logo4" />
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="#" target="_blank" aria-label="лого компанії">
+                <svg width="106" height="60" class="clients-icon">
+                  <use xlink:href="./img/svg/sprite.svg#Logo5" />
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="#" target="_blank" aria-label="лого компанії">
+                <svg width="106" height="60" class="clients-icon">
+                  <use xlink:href="./img/svg/sprite.svg#Logo6" />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -138,16 +366,51 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-        <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
-        <ul class="contacts-list">
-          <li class="contacts-item">
-            <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="contacts-item">
-            <a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        <div class="inner-contacts">
+          <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+          <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="inner-social-links">
+          <b class="join">приєднуйтесь</b>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="#" target="_blank" aria-label="cсылка на инстаграм">
+                <svg width="20" height="20" class="social-icon">
+                  <use xlink:href="./img/svg/sprite.svg#instagram" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#" target="_blank" aria-label="cсылка на твиттер">
+                <svg width="20" height="20" class="social-icon">
+                  <use xlink:href="./img/svg/sprite.svg#twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#" target="_blank" aria-label="cсылка на фэйсбук">
+                <svg width="20" height="20" class="social-icon">
+                  <use xlink:href="./img/svg/sprite.svg#facebook" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#" target="_blank" aria-label="cсылка на линкедин">
+                <svg width="20" height="20" class="social-icon">
+                  <use xlink:href="./img/svg/sprite.svg#linkedin" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
